@@ -1,4 +1,108 @@
 ---
 label: Section
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Ex. Education
+- name: section_item_type
+  type: select
+  default: Full Listings
+  config:
+    required: false
+    options:
+    - Simple List
+    - Title with Descriptor and Description
+    - Title with Description on Same Line
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Section's Item Type
+- name: section_items_full
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: descriptor
+    type: text
+    config:
+      required: false
+    label: Descriptor
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+  - name: date
+    type: text
+    config:
+      required: false
+    label: Date
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Section's Items
+  showOnly:
+    field: section_item_type
+    value: Title with Descriptor and Description
+- name: sections_items_basic
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+  - name: date
+    type: text
+    config:
+      required: false
+    label: Date
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Section's Items
+  showOnly:
+    field: section_item_type
+    value: Title with Description on Same Line
+- name: sections_items_list
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: date
+    type: text
+    config:
+      required: false
+    label: Date
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Section's Items
