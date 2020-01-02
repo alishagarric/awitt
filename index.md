@@ -42,10 +42,7 @@ layout: landing-page
         <div class="flex-row basic-list">
           <div class="main">
             <div class="title">
-              {{ sub-item.title }}
-            </div>
-            <div class="descriptor">
-              {{ sub-item.descriptor }}
+              {{ sub-item.title }},
             </div>
             <div class="description">
               {{ sub-item.description }}

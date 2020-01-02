@@ -71,6 +71,10 @@ body {
 .date {
     font-weight: 700;
     color: grey;
+    white-space: nowrap;
+    padding-left: 20px;
+    width: 200px;
+    text-align: right;
 }
 
 .resume .title {
@@ -97,4 +101,8 @@ body {
 
 .descriptor {
     color: grey;
+}
+
+.flex-row.basic-list .title, .flex-row.basic-list .description {
+    display: inline;
 }
