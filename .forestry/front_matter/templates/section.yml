@@ -54,7 +54,7 @@ fields:
     min: 
     max: 
     labelField: 
-  label: Section's Items
+  label: Section Items
   showOnly:
     field: section_item_type
     value: Title with Descriptor and Description
@@ -84,7 +84,7 @@ fields:
     min: 
     max: 
     labelField: 
-  label: Section's Items
+  label: Section Items
   showOnly:
     field: section_item_type
     value: Title with Description on Same Line
@@ -105,7 +105,7 @@ fields:
     min: 
     max: 
     labelField: 
-  label: Section's Items
+  label: Section Items
   showOnly:
     field: section_item_type
     value: Simple List
