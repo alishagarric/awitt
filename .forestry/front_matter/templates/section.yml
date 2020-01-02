@@ -110,5 +110,5 @@ fields:
     field: section_item_type
     value: Simple List
 pages:
+- _posts/2020-01-02-certifications-licensures.md
 - _posts/2020-01-02-education.md
-- _posts/certifications-licensures.md
