@@ -37,15 +37,10 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: country
-  label: Country
+- name: full_name
   type: text
-  hidden: false
-  default: ''
-- name: twitter
-  label: Twitter
-  type: text
-  hidden: false
-  default: ''
+  config:
+    required: false
+  label: Full Name
 pages:
 - _data/information.yml
