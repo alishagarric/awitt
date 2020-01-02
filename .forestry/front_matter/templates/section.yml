@@ -106,5 +106,8 @@ fields:
     max: 
     labelField: 
   label: Section's Items
+  showOnly:
+    field: section_item_type
+    value: Simple List
 pages:
 - _posts/education.md
